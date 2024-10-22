@@ -99,7 +99,50 @@ Implemente um método na classe `Canal` com a seguinte assinatura e descrição:
 Se o parâmetro `mes` estiver fora da faixa válida (1 a 12), imprima no terminal
 uma mensagem de erro e retorne zero.
 
-### (Opcional) Exercício 5 [Desafio]
+### Exercício 5
+
+Implemente um método na classe `Canal` com a seguinte assinatura e descrição:
+
+```java
+    /**
+     * Retorna se o canal tem alguém inscrito com o nome passado.
+     * @param nome O nome a ser procurado na lista de inscritos.
+     * @return Retorna true se tem alguém inscrito com o nome passado,
+     *         e false em caso contrário
+     */
+    private boolean estaInscrito(String nome) {
+```
+
+Dica: lembre-se que para comparação de Strings em Java, não podemos usar o
+operador `==`. Em vez disse, use o método `equals`.
+
+### Exercício 6
+
+Repare que da forma que o método `inscrever` da classe `Canal` está 
+implementado, uma pessoa pode se inscrever mais de uma vez no canal.
+
+A ideia neste exercício é alterar o método `inscrever` para que ele só inclua
+a inscrição se não existir nenhuma outra inscricao com o mesmo nome.
+Repare que, você pode usar o método implementado no exercício anterior.
+
+Com essa alteração o método `inscrever` nem sempre adiciona uma inscricao ao
+canal.
+Nesse tipo de situação, o ideal é que o método indique isso de alguma forma
+para quem chamou o método.
+Para isso, altere o tipo de retorno do método para `boolean` e faça com que
+ele retorne `true` se a inscrição foi adicionada no canal e `false` em caso 
+contrário.
+
+Dica: faça os testes abaixo para garantir que o método está implementado
+corretamente:
+
+- Tente inscrever objetos `Inscricao` que tenham nomes diferentes.
+- Tente inscrever no canal dois objetos `Inscricao` diferentes, mas que tenham
+  o mesmo nome.
+- Tente inscrever o mesmo objeto `Inscricao` duas vezes no canal.
+
+
+### (Opcional) Exercício 7 [Desafio]
 
 Obs.: para fazer esse exercício você precisa assistir ao início da aula 
 teórica 4.3.
