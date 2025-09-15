@@ -41,7 +41,7 @@ no capítulo atual.
 ## Implementação passo a passo
 
 As alterações necessárias no projeto são detalhadas passo a passo a seguir. 
-É **altamente recomendável** que você compile e rode programa após a
+É **altamente recomendável** que você compile e rode o programa após a
 implementação de cada passo, para testar se tudo foi feito corretamente.
 
 ### Exercício 1
@@ -58,7 +58,7 @@ No construtor, crie o objeto coleção e atribua-o ao atributo correspondente.
 Complete a implementação do método `quantidadeDeInscritos` para que retorne
 o tamanho atual do objeto coleção.
 É claro que este método retornará zero enquanto o método `inscrever` não for 
-implementado, mas ele ele estará pronto para ser testado quando isso for feito.
+implementado, mas ele estará pronto para ser testado quando isso for feito.
 
 ### Exercício 3
 
@@ -118,12 +118,13 @@ operador `==`. Em vez disse, use o método `equals`.
 
 ### Exercício 6
 
-Repare que da forma que o método `inscrever` da classe `Canal` está 
-implementado, uma pessoa pode se inscrever mais de uma vez no canal.
+Repare que, provavelmente, da forma que o método `inscrever` da classe `Canal` 
+está  implementado, uma pessoa pode se inscrever mais de uma vez no canal.
 
 A ideia neste exercício é alterar o método `inscrever` para que ele só inclua
 a inscrição se não existir nenhuma outra inscricao com o mesmo nome.
-Repare que, você pode usar o método implementado no exercício anterior.
+Repare que você deve usar o método implementado no exercício anterior para
+tratar isso.
 
 Com essa alteração o método `inscrever` nem sempre adiciona uma inscricao ao
 canal.
